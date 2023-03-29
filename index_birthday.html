@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapQR | SkyRanjan</title>
+    <link rel="stylesheet" href="style_birthday.css">
+</head>
+
+<body>
+    <header>
+        <div class="Wrapper">
+            <img src="logo.png" alt="image here">
+        </div>
+        <nav>
+            <a class="nav_item" href="index.html">Home</a>
+            <a class="nav_item" href="index_birthday.html">Birthday</a>
+            <a class="nav_item" href="index_professional.html">Professional</a>
+            <a class="nav_item" href="index_casual.html">Casual</a>
+            <a class="nav_item" href="index_social.html">Social media</a>
+        </nav>
+    </header>
+    <section>
+        <img src="background.png" alt="">
+    </section>
+
+    <footer>
+        <div class="footer_wrap">
+            <div class="info">
+                <a class="info_items" href="https://twitter.com/home"><img src="twitter.png" alt=""></a>
+                <a class="info_items" href="mailto:akashranjan.lko@gmail.com">Email</a>
+                <a class="info_items" href="https://web.telegram.org/k/">Telegram</a>
+            </div>
+
+        </div>
+    </footer>
+    <div class="conatainer_qr">
+        <p>Enter the name of the birthday kid</p>
+        <input type="text" placeholder="Name" id="qrText">
+       
+        <div id="imgBox_qr">
+            <img src="" id="qrImage">
+        </div>
+     
+        <button onclick="javascript:generateQR()" id="myBtn">Generate QR Code</button>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

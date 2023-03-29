@@ -1,0 +1,263 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+    height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+body {
+    margin: 0;
+    background: #ffffff;
+    font-family: 'work sans', sans-serif;
+    font-weight: 300;
+}
+
+ 
+
+header {
+    background: #e58045;
+    display: flex;
+    justify-content: center;
+}
+
+
+.Wrapper {
+    background-color: white;
+    width: 5rem;
+    height: 5rem;
+    margin-right: auto;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    align-items: center;
+}
+
+.nav_item {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color:#222;
+    text-decoration: none;
+}
+
+
+
+
+section {
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34.7rem;
+}
+
+.container{
+    
+    width: 62rem;
+    height: 29rem;
+
+}
+video{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    height: 5rem;
+    background-color: #e58045;
+}
+
+.footer_wrap {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.info {
+    display: flex;
+}
+.info_items{
+    padding: 1.5rem;
+    color:#222;
+    text-decoration: none;
+    
+}
+.info_items:hover{
+    color:white;
+
+}
+
+.nav_item:hover{
+    color:white;
+
+}
+.conatainer_qr{
+    width: 25rem;
+    padding: 1.5625rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 0.625rem;
+}
+.conatainer_qr p{
+    font-weight: 600;
+    font-size: 0.9375rem;
+    margin-bottom: 0.5rem;
+}
+.conatainer_qr input{
+    width: 100%;
+    height: 3.125rem;
+    border: 0.0625rem solid #494eea;
+    outline: 0;
+    padding: 0.625rem;
+    margin: 0.625rem 0 1.25rem;
+    border-radius: 0.3125rem;
+}
+.conatainer_qr button{
+    width: 100%;
+    height: 3.125rem;
+    background: #494eea;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.625rem 0.625rem rgba(0,0,0,0.1);
+    cursor: pointer;
+    margin: 1.25rem 0;
+    font-weight: 500;
+}
+#imgBox_qr{
+    width: 12.5rem;
+    border-radius: 0.3125rem;
+    max-height: 0;
+    overflow:hidden;
+    transition: max-height 1s;
+}
+#imgBox_qr img{
+    width: 100%;
+    padding: 0.625rem;
+}
+#imgBox_qr.show-img{
+    max-height: 18.75rem;
+    margin: 0.625rem auto;
+    border: 0.0625rem solid #d1d1d1;
+}
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(-0.215rem);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(0.215rem);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}
